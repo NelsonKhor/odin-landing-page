@@ -36,33 +36,47 @@ ul {
 }
 
 header {
-    padding: 0 200px;
+    display: flex;
+    flex-direction: row;
+    padding: 60px 200px;
     background-color: #1F2937;
     color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 .title {
     font-size: 48px;
     font-weight: bolder;
     color: #f9faf8;
+    margin: 0;
 }
 
 .title-text {
     font-size: 18px;
     color: #E5E7EB;
+    margin: 0;
 }
 
 .button-blue {
     background-color: #3882f6;
     color: white;
+    font-weight: 500;
+    margin: 10px 0;
     padding: 8px 32px;
     border: 0;
     border-radius: 4px;
 }
 
+.header-pic {
+    width: 70vh;
+    height: auto;
+}
+
 .info-title {
     text-align: center;
-    margin: 40px;
+    margin: 30px 0 0 0;
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
@@ -70,7 +84,8 @@ header {
 
 .info {
     display: flex;
-    padding: 0;
+    margin-bottom: 40px;
+    padding: 60px 200px;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -89,4 +104,68 @@ header {
     width: 200px;
     border: 5px solid #3882f6;
     border-radius: 25px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    padding: 60px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-author {
+    align-self: flex-end;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.modal {
+    background-color: #3882f6;
+    border-radius: 10px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 200px;
+
+}
+
+.container {
+    color: #f9faf8;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px 0;
+}
+
+.modal-title {
+    margin: 0%;
+    font-weight: bold;
+}
+
+.modal-text{
+    margin: 0;
+}
+
+.button-white {
+    background-color: #3882f6;
+    color: white;
+    font-weight: 500;
+    margin: 10px 0;
+    padding: 8px 32px;
+    border-radius: 4px;
+    border-color: #f9faf8;
+}
+
+footer {
+    background-color: #1F2937;
+    font-size: 18px;
+    color: #E5E7EB;
+    text-align: center;
+    padding: 20px;
 }
